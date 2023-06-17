@@ -16,10 +16,16 @@
 
 .details {
     height: 885px;
+    display: flex;
+}
+
+iframe.kind {
+    width: 20%;
+    height: 100%;
 }
 
 iframe.writingdetails {
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
