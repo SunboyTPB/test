@@ -1,0 +1,110 @@
+.title {
+    height: 80px;
+    background-color: blue;
+    display: flex;
+}
+
+.logo {
+    width: 60%;
+}
+
+.functions {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+    height: 885px;
+    display: flex;
+}
+
+div.kind {
+    width: 20%;
+    height: 100%;
+}
+
+div.writingdetails {
+    width: 80%;
+    height: 100%;
+}
+
+iframe.kind {
+    width: 100%;
+    height: 100%;
+}
+
+iframe.writingdetails {
+    width: 100%;
+    height: 100%;
+}
+
+p.content {
+    font-size: x-small;
+}
+
+.data {
+    text-align: center;
+}
+
+a.home, a.writings, a.about, a.pay, a.more, a.none {
+    color: white;
+    height: 20%;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+a.home, a.writings, a.about {
+    margin-right: 30px;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: darkred;
+}
+
+a.more {
+    display: none;
+}
+
+a.none {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .functions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    a.more {
+        display: block;
+    }
+
+    a.pay {
+        display: none;
+    }
+
+    div.details {
+        display: block
+    }
+
+    div.kind {
+        height: 120px;
+        width: 100%;
+        display: none;
+    }
+
+    div.writingdetails {
+        width: 100%;
+        height: 765px;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>作品</title>
+        <meta charset="utf-8">
+        <style>
+            @import url("css/writings.css");
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+        <div class="title">
+            <div class="logo">
+
+            </div>
+            <div class="functions">
+                <a class="home" href="index.html">主页</a>
+                <a class="writings" href="writings.html">作品</a>
+                <a class="about" href="about.html">关于</a>
+                <a class="pay" href="pay.html">打赏</a>
+                <a id="more" class="more" onclick="show()">更多</a>
+                <a id="none" class="none" onclick="hide()">收回</a>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="kind" id="kind"><iframe src="kind.html" name="kind" class="kind"></iframe></div>
+            <div class="writingdetails"><iframe src="writingdetails.html" name="writingdetails" class="writingdetails"></iframe></div>
+        </div>
+
+        <div class="data">
+            <p class="content">Projected by Github, SunboyTPB 2023-2023</p>
+        </div>
+    </body>
+    <script>
+        var kind = document.getElementById("kind");
+        var more = document.getElementById("more");
+        var none = document.getElementById("none");
+        function show() {
+            kind.style.display = "block";
+            none.style.display = "block";
+            more.style.display = "none";
+        }
+
+        function hide() {
+            kind.style.display = "none";
+            more.style.display = "block";
+            none.style.display = "none";
+        }
+    </script>
+</html>

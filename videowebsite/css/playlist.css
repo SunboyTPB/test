@@ -1,0 +1,15 @@
+body {
+    overflow: scroll;
+}
+
+p {
+    cursor: pointer;
+}
+
+p:hover {
+    color: blue;
+}
+
+p:active {
+    color: red;
+}

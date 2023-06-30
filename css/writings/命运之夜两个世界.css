@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+
+}
+
+body {
+    display: flex;
+    height: 100%;
+    background-image: url("../../writings/img/命运之夜两个世界\(BACKGROUND\).jpg");
+    background-size: cover;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(14px);  
+
+}
+
+.huabao {
+    width: 40%;
+    position: relative;
+}
+
+.details {
+    width: 60%;
+}
+
+.title {
+    height: 20%;
+}
+
+.content {
+    height: 50%;
+}
+
+.website {
+    height: 30%;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: darkred;
+}
+
+a {
+    color: blue;
+    height: 20%;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .huabao {
+        display: none;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    body {
+        color: white;
+    }
+}

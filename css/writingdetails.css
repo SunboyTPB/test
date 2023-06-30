@@ -1,0 +1,37 @@
+.hang {
+    display: flex;
+    height: 300px;
+}
+
+.bufen {
+    text-align: center;
+    width: 25%;
+}
+
+.img {
+    height: 90%;
+}
+
+.text {
+    height: 10%;
+}
+
+.bufen:hover {
+    color: red;
+}
+
+.bufen:hover img.dongfangshuangshilu {
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .hang {
+        display: block;
+        height: 1200px;
+    }
+
+    .bufen {
+        width: 100%;
+        height: 300px;
+    }
+}
