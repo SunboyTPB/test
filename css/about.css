@@ -1,96 +1,14 @@
-<<<<<<< Updated upstream
-.title {
-    height: 80px;
-    background-color: blue;
-    display: flex;
-}
-
-.logo {
-    width: 60%;
-}
-
-.functions {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-}
-
-.details {
-    text-align: center;
-    height: 885px;
-    position: relative;
-    background-image: url("../img/BACKGROUND.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-.text {
-    position: absolute;
-    width: 60%;
-    height: 30%;
-=======
 div.content {
     position: relative;
 }
 
 div.window {
     position: absolute;
->>>>>>> Stashed changes
     margin: auto;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-<<<<<<< Updated upstream
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
-}
-
-.data {
-    text-align: center;
-}
-
-
-a.home, a.writings, a.about, a.pay {
-    color: white;
-    height: 20%;
-    margin-top: 25px;
-    text-decoration: none;
-}
-
-a.home, a.writings, a.about {
-    margin-right: 30px;
-}
-
-a:hover {
-    color: red;
-}
-
-a:active {
-    color: darkred;
-}
-p.content {
-    font-size: x-small;
-}
-
-@media only screen and (max-width: 768px) {
-    .logo {
-        display: none;
-    }
-
-    .functions {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .text {
-        width: 100%;
-    }
-
-
-=======
     width: 50%;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.411);
@@ -114,5 +32,4 @@ button.seeUs:hover {
 
 button.seeUs:active {
     background-color: rgb(0, 0, 132);
->>>>>>> Stashed changes
 }
