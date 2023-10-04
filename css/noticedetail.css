@@ -11,6 +11,10 @@ p.date {
     font-size: smaller;
 }
 
+p.noticecontent {
+    white-space: pre-line;
+}
+
 @media only screen and (max-width: 768px) {
     .content {
         width: 100%;

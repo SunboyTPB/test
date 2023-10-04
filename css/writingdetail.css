@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+    display: flex;
+}
+
+div.haibao {
+    width: 40%;
+    position: relative;
+}
+
+div.content {
+    width: 60%;
+    padding-left: 10px;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+
+    position: absolute;
+
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
