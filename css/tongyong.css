@@ -12,6 +12,7 @@ div.title {
 
 div.title_logo {
     width: 50%;
+    text-align: center;
 }
 
 div.title_functions {
@@ -22,7 +23,6 @@ div.title_functions {
 }
 
 img.title_logo_image {
-    width: 100%;
     height: 100%;
 }
 
