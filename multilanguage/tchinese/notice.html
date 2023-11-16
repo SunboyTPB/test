@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TPB个人网站 - 公告</title>
+        <meta charset="utf-8">
+        <meta name="msvalidate.01" content="C9A9EE71F3DB72A940736C733BD5F4CE" />
+        <style>
+            @import url("./css/tongyong.css");
+            @import url("./css/notice.css");
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="title">
+            <div class="title_logo">
+                <img src="./img/LOGO.png" class="title_logo_image"/>
+            </div>
+            <div class="title_functions">
+                <div class="title_mobile_functions_show">
+                    <a id="mobile_show">: : :</a>
+                </div>
+                <div class="title_mobile_functions" id="title_mobile_functions">
+                    <ul class="title_mobile_functions">
+                        <li class="title_mobile_functions"><a href="index.html">主頁</a></li>
+                        <li class="title_mobile_functions"><a href="notice.html">公告</a></li>
+                        <li class="title_mobile_functions"><a href="writings.html">作品</a></li>
+                        <li class="title_mobile_functions"><a href="about.html">關於</a></li>
+                        <li class="title_mobile_functions"><a href="tips.html">打赏</a></li>
+                    </ul>
+                </div>
+                <a class="computer" href="index.html">主頁</a>
+                <a class="active computer" href="notice.html">公告</a>
+                <a class="computer" href="writings.html">作品</a>
+                <a class="computer" href="about.html">關於</a>
+                
+            </div>
+        </div>
+        <div class="content">
+            <div class="buttons" id="buttons">
+                
+            </div>
+        </div>
+        <div class="version">
+            Made by SunboyTPB, 2023-2023. Beta Version 2.0.0
+        </div>
+    </body>
+    <script type="text/javascript" src="./json_format_js/notice.js"></script>
+    <script>
+        console.log(Object.keys(notice).length);
+        var length = Object.keys(notice).length;
+        let buttons = document.getElementById("buttons");
+
+        for(i=0; i<length; i++) {
+
+
+            let memberButton = document.createElement("button");
+            let text = document.createTextNode(notice[i]["title"]);
+
+            memberButton.appendChild(text);
+            memberButton.onclick = noticedetail;
+            memberButton.id = i;
+            buttons.append(memberButton);
+
+        }
+
+        function noticedetail(event) {
+            const id = event.target.id;
+            console.log(id);
+
+            sessionStorage.setItem("id", id);
+            location.href = "noticedetail.html"
+        }
+
+    </script>
+    <script type="text/javascript" src="./js/index_mobile.js"></script>
+
+</html>

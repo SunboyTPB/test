@@ -11,6 +11,6 @@ var writings = [
         "title": "Fate; Two World",
         "type": "同人小说",
         "description": "第五次圣杯战争爆发二十年以后的2024年，一个大圣杯却突然出现了。而这个大圣杯也牵扯到另外一个世界。人们把这种规模的圣杯战争，称之为圣杯讨伐战。而现在，两个世界的他们将会做出不同的选择。这两个世界的命运将会走向何处？",
-        "novelurl": "SF轻小说：https://book.sfacg.com/Novel/650124/\r\n哔哩哔哩专栏：https://www.bilibili.com/read/cv24652183?spm_id_from=333.999.0.0"
+        "novelurl": "SF轻小说：https://book.sfacg.com/Novel/650124/\r\n哔哩哔哩专栏：https://www.bilibili.com/read/cv24652183?spm_id_from=333.999.0.0\r\n晋江文学：https://www.jjwxc.net/onebook.php?novelid=8429432"
     },
 ]

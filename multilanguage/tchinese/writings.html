@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TPB个人网站 - 作品</title>
+        <meta charset="utf-8">
+        <meta name="msvalidate.01" content="C9A9EE71F3DB72A940736C733BD5F4CE" />
+        <style>
+            @import url("./css/writings.css");
+            
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="title">
+            <div class="title_logo">
+                <img src="./img/LOGO.png" class="title_logo_image"/>
+            </div>
+            <div class="title_functions">
+                <div class="title_mobile_functions_show">
+                    <a id="mobile_show">: : :</a>
+                </div>
+                <div class="title_mobile_functions" id="title_mobile_functions">
+                    <ul class="title_mobile_functions">
+                        <li class="title_mobile_functions"><a href="index.html">主頁</a></li>
+                        <li class="title_mobile_functions"><a href="notice.html">公告</a></li>
+                        <li class="title_mobile_functions"><a class="mobile_active" href="writings.html">作品</a></li>
+                        <li class="title_mobile_functions"><a href="about.html">關於</a></li>
+                        <li class="title_mobile_functions"><a href="tips.html">打赏</a></li>
+                    </ul>
+                </div>
+                <a class="computer" href="index.html">主頁</a>
+                <a class="computer" href="notice.html">公告</a>
+                <a class="active computer" href="writings.html">作品</a>
+                <a class="computer" href="about.html">關於</a>
+                
+            </div>
+        </div>
+        <div class="content" id="content">
+
+        </div>
+        <div class="version">
+            Made by SunboyTPB, 2023-2023. Beta Version 2.0.0
+        </div>
+    </body>
+    <script type="text/javascript" src="./json_format_js/writings.js"></script>
+    <script>
+        let content = document.getElementById("content");
+
+        var length = Object.keys(writings).length;
+        for(i=0; i<length; i++) {
+            let membertag = document.createElement("div");
+            membertag.className = "member";
+            membertag.id = writings[i]["id"];
+            membertag.onclick = writingdetail;
+            let imgtag = document.createElement("img");
+            imgtag.id = writings[i]["id"];
+            let titletag = document.createElement("p");
+            titletag.id = writings[i]["id"];
+
+            imgtag.src = `./img/novel/${writings[i]["title"]}.png`;
+            let title = document.createTextNode(writings[i]["title"] + "（" + writings[i]["type"] + "）");
+            titletag.appendChild(title);
+
+            membertag.append(imgtag);
+            membertag.append(titletag);
+
+            content.appendChild(membertag);
+        }
+
+        function writingdetail(event) {
+            const novelid = event.target.id;
+            console.log(novelid);
+            sessionStorage.setItem("novelid", novelid);
+            location.href = "writingdetail.html";
+        }
+        
+    </script>
+    <script type="text/javascript" src="./js/index_mobile.js"></script>
+</html>

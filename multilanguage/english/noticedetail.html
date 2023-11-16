@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TPB Personal Website - Notice Content</title>
+        <meta charset="utf-8">
+        <meta name="msvalidate.01" content="C9A9EE71F3DB72A940736C733BD5F4CE" />
+        <style>
+            @import url("./css/noticedetail.css");
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="content">
+            <h2 class="noticetitle" id="noticetitle"></h2>
+            <p class="date" id="date"></p>
+            <p class="noticecontent" id="noticecontent"></p>
+        </div>
+    </body>
+    <script type="text/javascript" src="./json_format_js/notice.js"></script>
+    <script>
+        let noticetitle = document.getElementById("noticetitle");
+        let date = document.getElementById("date");
+        let noticecontent = document.getElementById("noticecontent");
+        if(!sessionStorage.getItem("id")) {
+            let titletext = document.createTextNode("WRONG!");
+            let contenttext = document.createTextNode("There is something error, please back to previous page and try again.");
+
+            noticetitle.append(titletext);
+            noticetitle.append(contenttext);
+        } else {
+            const id = sessionStorage.getItem("id");
+            let titletext = document.createTextNode(notice[id]["title"]);
+            let datetext = document.createTextNode(notice[id]["addtime"]);
+            let contenttext = document.createTextNode(notice[id]["content"])
+
+            noticetitle.append(titletext);
+            date.append(datetext);
+            noticecontent.append(contenttext);
+        }
+    </script>
+</html>

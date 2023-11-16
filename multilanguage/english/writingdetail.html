@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="msvalidate.01" content="C9A9EE71F3DB72A940736C733BD5F4CE" />
+        <style>
+            @import url("./css/writingdetail.css");
+            .content {
+                background-image: "";
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="haibao" id="haibao">
+            
+        </div>
+        <div class="content" id="content">
+            <h1 id="title" style="margin-top: 10%"></h1>
+            <p id="type" style="font-size: small;"></p>
+            <p id="description" style="margin-top: 20%;"></p>
+            <p id="novelurl" style="margin-top: 10%;white-space: pre-line;"></p>
+        </div>
+    </body>
+    <script type="text/javascript" src="./json_format_js/writings.js"></script>
+    <script>
+        const novelid = sessionStorage.getItem("novelid")
+        const i = novelid - 1;
+
+        const title = writings[i]["title"];
+        const type = writings[i]["type"];
+        const description = writings[i]["description"];
+        const novelurl = writings[i]["novelurl"];
+
+        let haibao = document.getElementById("haibao");
+
+        let imgtag = document.createElement("img");
+        imgtag.src = `./img/novel/${title}.png`;
+
+        haibao.appendChild(imgtag);
+
+        let titletag = document.getElementById("title");
+        let typetag = document.getElementById("type");
+        let descriptiontag = document.getElementById("description");
+        let novelurltag = document.getElementById("novelurl");
+
+        let titletext = document.createTextNode(title);
+        let typetext = document.createTextNode(type);
+        let descriptiontext = document.createTextNode(description);
+        let novelurltext = document.createTextNode(novelurl);
+
+        titletag.append(titletext);
+        typetag.append(typetext);
+        descriptiontag.append(descriptiontext);
+        novelurltag.append(novelurltext);
+    </script>
+</html>
